@@ -40,7 +40,7 @@ export const Login = () => {
                 toast.success("Login successful");
                 storeTokenInLS(res_data.token);
                 setUser({ email: "", password: "" });
-                navigate("/home");
+                navigate("/task");
             } else {
                 toast.error(res_data.extraDetails ? res_data.extraDetails : res_data.message);
                 console.log();
